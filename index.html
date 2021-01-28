@@ -1,50 +1,90 @@
-
-<!DOCTYPE HTML>
 <html>
 <head>
-  <title>Register Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body{
+			background-color: #f2f2f2;
+		}
+		.head1{
+			background-color: #c33c3c;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			color: white;
+			font-size: 50px;
+			font-family: Brush Script MT;
+			text-align: center;
+		}
+		
+		.up1{
+
+			background-color: #ffe6e9;
+			margin-top: 30px;
+			margin-left: 10px;
+			margin-right: 180px;
+			border-radius: 15px;
+			text-align: center;
+			box-shadow: 14px 17px 25px #ff99a8;
+		}
+		.up2{
+			background-color: #ffe6e9;
+			margin-top: 50px;
+			margin-left: 180px;
+			margin-right: 10px;
+			border-radius: 15px;
+			text-align: center;
+			box-shadow: 14px 17px 25px #ff99a8;
+		}
+		.hi1{
+			color: #c33c3c;
+			font-size: 20px;
+			border: none;
+			outline: none;
+			font-family: Copperplate;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			background-color: transparent;
+		}
+		.vid{
+			margin-top: 100px;
+			text-align: center;
+		}
+		.vid1{
+			margin-top: 50px;
+			text-align: center;
+		}
+		.hi2{
+			border:none;
+			background-color: transparent;
+			font-size: 60px;
+		}
+	</style>
 </head>
 <body>
- <form action="insert.php" method="POST">
-  <table>
-   <tr>
-    <td>Name :</td>
-    <td><input type="text" name="username" required></td>
-   </tr>
-   <tr>
-    <td>Password :</td>
-    <td><input type="password" name="password" required></td>
-   </tr>
-   <tr>
-    <td>Gender :</td>
-    <td>
-     <input type="radio" name="gender" value="m" required>Male
-     <input type="radio" name="gender" value="f" required>Female
-    </td>
-   </tr>
-   <tr>
-    <td>Email :</td>
-    <td><input type="email" name="email" required></td>
-   </tr> 
-   <tr>
-    <td>Phone no :</td>
-    <td>
-     <select name="phoneCode" required>
-      <option selected hidden value="">Select Code</option>
-      <option value="977">977</option>
-      <option value="978">978</option>
-      <option value="979">979</option>
-      <option value="973">973</option>
-      <option value="972">972</option>
-      <option value="974">974</option>
-     </select>
-     <input type="phone" name="phone" required>
-    </td>
-   </tr>
-   <tr>
-    <td><input type="submit" value="Submit"></td>
-   </tr>
-  </table>
- </form>
-</body>
+	<div class="head1">
+		Baby Reels
+	</div>
+ 
+   <div class="up1">
+
+<input type="button" value="Upload Image" onclick="op1()" class="hi1">
+   </div>
+
+   <div class="up2">
+
+<input type="button" value="Upload Video" onclick="op2()" class="hi1">
+   </div>
+ 
+
+
+
+<div class="vid">
+	<input type="button" value="&#127909;" onclick="op3()" class="hi2">
+</div>
+
+<div class="vid1">
+	<input type="button" value="&#127889;" onclick="op4()" class="hi2">
+</div>
+
+
+	</body>
 </html>
